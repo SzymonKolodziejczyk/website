@@ -3,11 +3,10 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        
-        <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
-        <link rel="stylesheet" type="text/css" href="CSS/grid.css">
-        <link rel="stylesheet" type= "text/css" href="CSS/style.css">
-        <link rel="stylesheet" type= "text/css" href="CSS/queries.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/grid.css">
+        <link rel="stylesheet" type= "text/css" href="css/style.css">
+        <link rel="stylesheet" type= "text/css" href="css/queries.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet" type="text/css">
         
@@ -16,7 +15,7 @@
         <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"> </script>
         <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
         <script src="CSS/js/script.js"></script>
         <title>Portfolio</title>    
     </head>
@@ -25,10 +24,9 @@
         <header>
             <nav class="sticky">
                 <div class="row">
-                <img src="CSS/img/Logo.png" alt="Logo strony" class="logo">
-                <img src="CSS/img/Logo.png" alt="Logo strony" class="logo-black">
+                <img src="css/img/Logo.png" alt="Logo strony" class="logo">
+                <img src="css/img/Logo.png" alt="Logo strony" class="logo-black">
                     <url class="main-nav js--main-nav">
-                        <li><a href="#Witaj">Witaj</a></li>
                         <li><a href="#Projekty">Przykładowe projekty</a></li>
                         <li><a href="#Omnie">O mnie</a></li>
                         <li><a href="#Kontakt">Kontakt</a></li>
@@ -42,10 +40,10 @@
                
                
                <div class="landingButtons">
-          <a href="#Projekty" class="btn animated slideInLeft" id="projectBtn">
+          <a href="#Projekty" id="projectBtn">
             Zobacz Projekty
           </a>
-          <a href="/Planzaj%C4%99%C4%87.pdf" target="_blank" class="btn animated slideInRight" id="resumeBtn">
+          <a href="/Planzaj%C4%99%C4%87.pdf" target="_blank" id="resumeBtn">
             Zobacz CV
           </a>
         </div>
@@ -54,14 +52,14 @@
             
     <div id="pageContainer">
         <section id="Projekty">
-        <div class="row js--wp-2">
-        </div>
       <h1 class="sectionHeading">Projekty</h1>
       <div id="cardGrid">  
+          
+          
           <div class="cardContainer">
           <div class="card">
             <div class="projectImageWrapper">
-              <img class="screenshot" src="CSS/img/1.png" alt="Site Saver project screenshot">
+              <img class="screenshot" src="CSS/img/1.png">
             </div>
             <div class="cardBody">
               <p class="cardTitle">Strona Rowerowa</p>
@@ -88,12 +86,12 @@
           <div class="cardContainer">
           <div class="card">
             <div class="projectImageWrapper">
-              <img class="screenshot" src="CSS/img/6.png" alt="Site Saver project screenshot">
+              <img class="screenshot" src="CSS/img/6.png">
             </div>
             <div class="cardBody">
               <p class="cardTitle">Nordic Walking</p>
               <div class="buttonWrapper">
-                <a href="https://szymonkolodziejczyk.github.io/wordpress/" target="_blank" class="btn">
+                <a href="http://nordicwalkingjura-pl.stackstaging.com" target="_blank" class="btn">
                   Zobacz demo
                 </a>
                 <a href="https://github.com/SzymonKolodziejczyk/wordpress" target="_blank" class="btn">
@@ -115,7 +113,7 @@
           <div class="cardContainer">
           <div class="card">
             <div class="projectImageWrapper">
-              <img class="screenshot" src="CSS/img/2.png" alt="Site Saver project screenshot">
+              <img class="screenshot" src="CSS/img/2.png">
             </div>
             <div class="cardBody">
               <p class="cardTitle">Wiadomości</p>
@@ -127,7 +125,7 @@
                   Zobacz Github
                 </a>
               </div>
-              <p class="description">Prosta strona z wiadomościami sportowymi</p>
+              <p class="description">Rekreacja klasycznej strony startowej z wiadomościami</p>
                 <h3>Wykorzystane umiejętności:</h3>
                 <ul class="skillsList">
                   <li>HTML</li>
@@ -142,7 +140,7 @@
           <div class="cardContainer">
           <div class="card">
             <div class="projectImageWrapper">
-              <img class="screenshot" src="CSS/img/3.png" alt="Site Saver project screenshot">
+              <img class="screenshot" src="CSS/img/3.png">
             </div>
             <div class="cardBody">
               <p class="cardTitle">Aplikacja</p>
@@ -169,7 +167,7 @@
           <div class="cardContainer">
           <div class="card">
             <div class="projectImageWrapper">
-              <img class="screenshot" src="CSS/img/4.png" alt="Site Saver project screenshot">
+              <img class="screenshot" src="CSS/img/4.png">
             </div>
             <div class="cardBody">
               <p class="cardTitle">Aktualna pogoda</p>
@@ -196,7 +194,7 @@
           <div class="cardContainer">
           <div class="card">
             <div class="projectImageWrapper">
-              <img class="screenshot" src="CSS/img/5.png" alt="Site Saver project screenshot">
+              <img class="screenshot" src="CSS/img/5.png">
             </div>
             <div class="cardBody">
               <p class="cardTitle">Pamiętnik</p>
@@ -221,14 +219,12 @@
         </div> 
           
         </div>
+            
     </section>
-        
-        
-        
         </div>
         
         
-        <section class="section-Umiejetnosci js--section-Umiejetnosci" id="Omnie">
+        <section class="section-Umiejetnosci" id="Omnie">
             <div class="row">
                 <h1><br><br>O mnie <br> </h1>
             </div>   
@@ -249,10 +245,6 @@
             <h3> Z wielką chęcią chcę rozwijać umiejętności, które posiadam, a także uczyć się nowych! </h3>
             </div>
             </section>
-        
-        
-        
-            
             
             <section class="section-Kontakt" id="Kontakt">
                 <div class="row js--wp-3">
@@ -273,8 +265,6 @@
                     <br><br><br>
                 </h3>
         
-        
-        
             <footer>
             
             <div class="row">
@@ -291,7 +281,8 @@
         <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"> </script>
         <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
         <script src="CSS/js/script.js"></script>
         
                 

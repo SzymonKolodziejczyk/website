@@ -169,6 +169,10 @@
     text-align: left;
   }
 
+.anim-typewriter {
+      animation: typewriter 3s steps(60) 1s 1 normal both,
+}
+
 @keyframes typewriter {
       from {
             width: 0;

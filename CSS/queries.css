@@ -147,19 +147,6 @@
     #landing {
     height: 100vh;
   }
-    
-.anim-typewriter {
-    width: 10em;
-}
-    
-@keyframes typewriter {
-    from {
-        width: 0;
-    }
-    to {
-         width: 12em;
-    }
-}
 
   .landingButtons {
     flex-flow: column;

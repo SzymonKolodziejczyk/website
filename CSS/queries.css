@@ -148,9 +148,18 @@
     height: 100vh;
   }
     
-    .anim-typewriter {
-        width:6em;
+.anim-typewriter {
+    width: 6em;
+}
+    
+@keyframes typewriter {
+    from {
+        width: 0;
     }
+    to {
+         width: 11em;
+    }
+}
 
   .landingButtons {
     flex-flow: column;
@@ -173,31 +182,37 @@
     text-align: left;
   }
     
+@media screen and (max-height: 700px) {
+  #landing {
+    height: 100vh;
+  }
+}
     
-    @media screen and (max-width: 500px) {
-  #title {
+@media screen and (max-width: 500px) {
+#title {
     font-size: 2.5em;
   }
 
-  #subHeading {
+#subHeading {
     font-size: 2em;
   }
 
-  .sectionHeading {
+.sectionHeading {
     font-size: 2em;
   }
 
-  .sectionInfo {
+.sectionInfo {
     font-size: 1em;
   }
 
-  .buttonWrapper {
+.buttonWrapper {
     flex-direction: column;
   }
 
-  .buttonWrapper .btn{
+.buttonWrapper .btn{
     margin-bottom: 1rem;
   }
+        
 }
 
 @media screen and (max-width: 400px) {
@@ -215,111 +230,3 @@
     font-size: 0.9em;
   }
 }
-
-@media screen and (max-height: 700px) {
-  #landing {
-    height: 100vh;
-  }
-}
-
-    
-    
-    /*Optymalizacja dla mobilnych urządzeń*/
-@media screen and (max-width: 1140px) {
-  #cardGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .logo {
-    font-size: 1em;
-  }
-
-  .navLinks {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 825px) {
-  #pageContainer {
-    padding: 2em;
-  }
-
-  #cardGrid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media screen and (max-width: 800px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .navLinks {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: var(--main-grey);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-
-  .navLinks li {
-    opacity: 0;
-    border-bottom: 2px solid var(--light-grey);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .navLinks li a {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .burger {
-    display: block;
-    cursor: pointer;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #landing {
-    height: 100vh;
-  }
-    
-.anim-typewriter {
-width:6em;
-}
-
-  .landingButtons {
-    flex-flow: column;
-  }
-  #projectBtn {
-    margin: 0;
-    margin-bottom: 20px;
-  }
-}
-
-.mobile-nav-icon.responsive {position: relative;}
-  .mobile-nav-icon.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .mobile-nav-icon.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }

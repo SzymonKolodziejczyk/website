@@ -183,10 +183,6 @@
     
 @media screen and (max-width: 500px) {
     
-    body {
-    overflow-x: hidden;
-  }
-    
 #landing {
   height: 100vh;
 }
